@@ -1,0 +1,56 @@
+﻿@model LoginModel
+@{
+    Layout = "_Layout";
+}
+<style type="text/css">
+    .btn {
+        cursor: pointer;
+    }
+</style>
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+        </div>
+
+        <!-- Login Form -->
+        <form asp-action="CheckLogin">
+            <span asp-validation-for="@Model.ID" class="text-danger"></span>
+            <input asp-for="@Model.ID" id="ID" class="fadeIn second" name="ID" placeholder="login">
+            <span asp-validation-for="@Model.PW" class="text-danger"></span>
+            <input asp-for="@Model.PW" id="PW" class="fadeIn third" name="PW" placeholder="password">
+            <input type="submit" class="fadeIn fourth" value="Log In">
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a class="underlineHover" href="#">Forgot Password?</a>
+        </div>
+
+    </div>
+    <div>
+        <div class="btn btn-primary btnRtn" >돌아가기</div>
+        <div class="btn btn-success btnJoin">가입하기</div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script type="text/javascript">
+        (function($) {
+            'use strict';
+            $('.btnRtn').on('click',
+                function() {
+                    $(location).attr('href','@Url.Action("Index","Home")');
+                });
+            $('.btnJoin').on('click',
+                function() {
+                    $(location).attr('href','@Url.Action("Join","Login")');
+                });
+
+        }).apply(this, [jQuery]);
+    </script>
+}

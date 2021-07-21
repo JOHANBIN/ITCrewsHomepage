@@ -1,0 +1,52 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    //프론트 구성에 따른 바닐라를 쓰든, JQuery를 쓰든, 공통 함수를 만들어서 결정할 것
+    <script type="text/javascript">
+        function OnCreateButtonClicked() {
+            let param =
+            {
+                Title: document.getElementById("title").value,
+                UserNo: 0,
+                Desc: document.getElementById("desc").value,
+                Type : "Community"
+            };
+            const xhr = new XMLHttpRequest();
+            xhr.open('POSt', '/CreateSubject');
+            xhr.setRequestHeader('Content-type', 'application/json');
+            xhr.send(JSON.stringify(param));
+
+            xhr.onreadystatechange = function (e) {
+                if (xhr.readyState !== XMLHttpRequest.DONE) return;
+
+                if (xhr.status === 200) {
+                    console.log(xhr.responseText);
+                    location.href = "./List"
+                } else {
+                    console.log('Error!');
+                }
+            };
+
+        };
+    </script>
+}
+
+
+<h2>Create</h2>
+
+<div>
+    제목
+    <input id="title" />
+</div>
+<div>
+    작성자
+    <input id="userId" />
+</div>
+<div>
+    내용
+    <textarea id="desc" cols="80" rows="4"></textarea>
+</div>
+<div style="width:100%; float:right!important; text-align:right!important;">
+    <input type="button" onclick="OnCreateButtonClicked()" value="작성"/>
+</div>

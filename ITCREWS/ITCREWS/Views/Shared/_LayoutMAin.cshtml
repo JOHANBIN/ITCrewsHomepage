@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = "_Layout";
+}
+
+@section header {
+    @RenderSection("header", required: false)
+}
+<div aria-hidden="false" id="wrap" data-position="fixed">
+    <header id="header">
+        <partial name="_Header" />
+    </header>
+    <div class="d-flex">
+        <div style="width:200px">
+            <partial name="_SideVar" />
+        </div>
+        <div id="container " class="container">
+
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+    <partial name="_footer" />
+</div>
+@RenderSection("modals", required: false)
+
+@section scripts {
+    @RenderSection("scripts", required: false)
+}

@@ -1,0 +1,23 @@
+﻿@model CrewModel.SubjectInfoModel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>이건 상세페이지임(예시)</h1>
+
+
+
+<h2>detail</h2>
+
+<div>
+    제목
+    <input name="Title" value="@Model.Title" readonly />
+</div>
+<div>
+    작성자
+    <input name="UserId" value="@Model.UserId" readonly />
+</div>
+<div>
+    내용
+    <textarea name="Desc" cols="80" rows="4" readonly>@Model.Desc</textarea>
+</div>

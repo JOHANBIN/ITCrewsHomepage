@@ -1,0 +1,50 @@
+﻿<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ITCREWS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Community" asp-action="List">커뮤니티</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">프로젝트</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">교육</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">스터디</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div>
+                <ul class="navbar-nav flex-row">
+                    @*<li class="nav-item">
+                            <a class="nav-link px-2"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2">Link</a>
+                        </li>*@
+                    <li class="nav-item">
+                        <a asp-controller="Login" asp-action="Login" type="button" class="header-btn">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Community" asp-action="List">Community</a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
