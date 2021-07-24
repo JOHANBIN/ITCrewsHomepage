@@ -1,5 +1,7 @@
-﻿using CrewService.Interface;
+﻿using CrewCore.Helpers;
+using CrewService.Interface;
 using ITCREWS.Models;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +13,9 @@ namespace ITCREWS.Controllers
     public class CheckDuplicateEmailController : BaseApiController<CheckDuplicateEmail>
     {
         ISignService _signService;
-        public CheckDuplicateEmailController(ISignService signService)
+        public CheckDuplicateEmailController(IHttpContextAccessor context, CookieHelper cookie, ISignService signService) : base(context, cookie)
         {
+            
             _signService = signService;
         }
         public override async Task<ICommonResponse> Process(CheckDuplicateEmail body)

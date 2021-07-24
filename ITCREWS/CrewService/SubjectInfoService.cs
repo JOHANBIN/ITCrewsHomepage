@@ -12,11 +12,13 @@ namespace CrewService
     {
         ISubjectInfoRepository subjectInfoRepository;
         ISubjectFtRepository subjectFtRepository;
+        IReplyRepository replyRepository;
 
-        public SubjectInfoService(ISubjectInfoRepository subjectInfoRepository, ISubjectFtRepository subjectFtRepository)
+        public SubjectInfoService(ISubjectInfoRepository subjectInfoRepository, ISubjectFtRepository subjectFtRepository, IReplyRepository replyRepository)
         {
             this.subjectInfoRepository = subjectInfoRepository;
             this.subjectFtRepository = subjectFtRepository;
+            this.replyRepository = replyRepository;
         }
 
         public async Task<Tuple<long, List<SubjectInfoModel>>> GetList(int pageIndex, int rows, string type, string searchWord)
@@ -45,9 +47,18 @@ namespace CrewService
                 }
             }
 
+            var replyCount = await replyRepository.GetCount(subjId);
+
+            if(replyCount == null)
+            {
+                return null;
+            }
+
             ftModel.ReadCount += 1;
 
             subjectInfoModel.SubjectFtModel = ftModel;
+
+            subjectInfoModel.ReplyCount = replyCount.Item1;
 
             return subjectInfoModel;
         }

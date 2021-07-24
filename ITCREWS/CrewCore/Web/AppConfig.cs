@@ -13,6 +13,7 @@ namespace CrewCore.Web
         public string Domain { get; set; }
         public string CookieDomain { get; set; }
         public string SiteCookieDomain { get; set; }
+        public string SEEDKEY { get; set; }
 
 
         public string this[string key]

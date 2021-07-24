@@ -11,8 +11,12 @@ namespace CrewModel
         public string Desc { get; set; }
         public long UserNo { get; set; }
         public string UserId { get; set; }
+
+        public string UserImage { get; set; }
         public DateTime ChangeDateTime { get; set; }
 
         public SubjectFtModel SubjectFtModel { get; set; } = new SubjectFtModel();
+
+        public int ReplyCount { get; set; }
     }
 }

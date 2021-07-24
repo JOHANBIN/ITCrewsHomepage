@@ -16,5 +16,7 @@ namespace CrewRepository.Interface
 
         public Task<ReplyModel> Get(long replyId);
         public Task<List<ReplyModel>> GetList(long subjectId);
+
+        public Task<Tuple<int>> GetCount(long subjectId);
     }
 }

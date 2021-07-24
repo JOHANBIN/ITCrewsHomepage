@@ -1,5 +1,7 @@
-﻿using CrewService.Interface;
+﻿using CrewCore.Helpers;
+using CrewService.Interface;
 using ITCREWS.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -12,8 +14,9 @@ namespace ITCREWS.Controllers
     {
 
         ISignService _signService;
-        public CheckEmailAuthController(ISignService signService)
+        public CheckEmailAuthController(IHttpContextAccessor context, CookieHelper cookie, ISignService signService) : base(context, cookie)
         {
+            
             _signService = signService;
         }
 

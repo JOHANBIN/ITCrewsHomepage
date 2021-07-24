@@ -8,5 +8,6 @@ namespace ITCREWS.Models
     public interface ICommonResponse
     {
         string ErrorDesc { get; set; }
+
     }
 }

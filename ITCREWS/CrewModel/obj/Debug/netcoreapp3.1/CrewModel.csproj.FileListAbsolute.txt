@@ -1,0 +1,15 @@
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewModel\bin\Debug\netcoreapp3.1\NLog.config
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewModel\bin\Debug\netcoreapp3.1\CrewModel.deps.json
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewModel\bin\Debug\netcoreapp3.1\CrewModel.dll
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewModel\bin\Debug\netcoreapp3.1\CrewModel.pdb
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewModel\bin\Debug\netcoreapp3.1\Shared.dll
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewModel\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewModel\bin\Debug\netcoreapp3.1\Shared.pdb
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewModel\bin\Debug\netcoreapp3.1\NLog.xml
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewModel\obj\Debug\netcoreapp3.1\CrewModel.csprojAssemblyReference.cache
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewModel\obj\Debug\netcoreapp3.1\CrewModel.csproj.CoreCompileInputs.cache
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewModel\obj\Debug\netcoreapp3.1\CrewModel.AssemblyInfoInputs.cache
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewModel\obj\Debug\netcoreapp3.1\CrewModel.AssemblyInfo.cs
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewModel\obj\Debug\netcoreapp3.1\CrewModel.csproj.CopyComplete
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewModel\obj\Debug\netcoreapp3.1\CrewModel.dll
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewModel\obj\Debug\netcoreapp3.1\CrewModel.pdb

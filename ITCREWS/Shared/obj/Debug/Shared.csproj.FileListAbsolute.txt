@@ -1,0 +1,10 @@
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\Shared\bin\Debug\NLog.config
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\Shared\bin\Debug\Shared.dll
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\Shared\bin\Debug\Shared.pdb
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\Shared\bin\Debug\NLog.dll
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\Shared\bin\Debug\NLog.xml
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\Shared\obj\Debug\Shared.csprojAssemblyReference.cache
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\Shared\obj\Debug\Shared.csproj.CoreCompileInputs.cache
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\Shared\obj\Debug\Shared.csproj.CopyComplete
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\Shared\obj\Debug\Shared.dll
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\Shared\obj\Debug\Shared.pdb

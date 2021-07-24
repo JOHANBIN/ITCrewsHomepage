@@ -15,9 +15,10 @@ namespace ITCREWS.Controllers.API
     {
         private CookieHelper _cookie;
         private IHttpContextAccessor _context;
-        public SignOutController(IHttpContextAccessor context)
+        public SignOutController(IHttpContextAccessor context ,CookieHelper cookie) : base(context, cookie)
         {
             _context = context;
+            _cookie = cookie;
         }
         public override async Task<ICommonResponse> Process(SignOut body)
         {

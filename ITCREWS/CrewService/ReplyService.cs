@@ -41,5 +41,10 @@ namespace CrewService
         {
             return await replyRepository.Get(replyId);
         }
+
+        public async Task<Tuple<int>> GetCount(long subjectId) 
+        {
+            return await replyRepository.GetCount(subjectId);
+        }
     }
 }

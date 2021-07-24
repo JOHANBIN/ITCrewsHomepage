@@ -17,7 +17,7 @@ namespace CrewCore.Web
         public CryptoHelper(AppConfig config)
         {
             _config = config;
-            Key = _config["SEEDKEY"];
+            Key = _config.SEEDKEY;
             Domain = _config.Domain;
 
         }

@@ -1,0 +1,5 @@
+ 19 | 2021/07/19 23:29:06.710 |ERROR | Procedure or function 'check_duplicate_email' cannot be found in database 'itcrew'. Verify that user 'monty'@'it-crews.com' has enough privileges to execute.
+ 12 | 2021/07/19 23:40:04.472 |ERROR | Procedure or function 'check_duplicate_email' cannot be found in database 'itcrew'. Verify that user 'monty'@'it-crews.com' has enough privileges to execute.
+ 18 | 2021/07/19 23:42:43.590 |ERROR | Unknown column 'LT.EMAIL' in 'field list'
+ 22 | 2021/07/19 23:42:49.564 |ERROR | Unknown column 'LT.EMAIL' in 'field list'
+ 22 | 2021/07/19 23:43:52.103 |ERROR | Unknown column 'LT.EMAIL' in 'field list'

@@ -19,6 +19,8 @@ namespace CrewModel
 
         public long ParentId { get; set; }
 
+        public string AuthorImg { get; set; }
+
         public List<ReplyModel> ChildReply { get; set; } = new List<ReplyModel>();
     }
 }

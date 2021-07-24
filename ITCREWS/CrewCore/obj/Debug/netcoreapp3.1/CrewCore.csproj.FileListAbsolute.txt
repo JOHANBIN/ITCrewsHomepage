@@ -1,0 +1,9 @@
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewCore\obj\Debug\netcoreapp3.1\CrewCore.csprojAssemblyReference.cache
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewCore\obj\Debug\netcoreapp3.1\CrewCore.csproj.CoreCompileInputs.cache
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewCore\obj\Debug\netcoreapp3.1\CrewCore.AssemblyInfoInputs.cache
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewCore\obj\Debug\netcoreapp3.1\CrewCore.AssemblyInfo.cs
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewCore\bin\Debug\netcoreapp3.1\CrewCore.deps.json
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewCore\bin\Debug\netcoreapp3.1\CrewCore.dll
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewCore\bin\Debug\netcoreapp3.1\CrewCore.pdb
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewCore\obj\Debug\netcoreapp3.1\CrewCore.dll
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewCore\obj\Debug\netcoreapp3.1\CrewCore.pdb

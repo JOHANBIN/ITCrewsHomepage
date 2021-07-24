@@ -13,10 +13,12 @@ using CrewRepository;
 using CrewRepository.Interface;
 using CrewService;
 using CrewService.Interface;
+using ITCREWS.Controllers;
 using ITCREWS.Models;
 using ITCREWS.Models.Config;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -28,9 +30,11 @@ namespace ITCREWS
 {
     public class Startup
     {
+        private static string[] CONFIG_NAMES = new string[] { "SEEDKEY" };
+
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+        Configuration = configuration;
 
             if(GCSettings.IsServerGC == false)
             {
@@ -46,6 +50,8 @@ namespace ITCREWS
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddHttpContextAccessor();
+
             services.AddCors(o =>
             {
                o.AddPolicy(name: itCrewsOrigins,
@@ -70,7 +76,7 @@ namespace ITCREWS
             });
 
 
-            InitializeDependencyInjection(services);
+            InitializeDependencyInjection(services, Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -106,7 +112,7 @@ namespace ITCREWS
             });
         }
 
-        private void InitializeDependencyInjection(IServiceCollection services)
+        private void InitializeDependencyInjection(IServiceCollection services, IConfiguration configuration)
         {
             services.AddTransient<ISubjectInfoRepository, SubjectInfoRepository>();
             services.AddTransient<ISubjectFtRepository, SubjecFtRepository>();
@@ -117,6 +123,22 @@ namespace ITCREWS
             services.AddTransient<IReplyService, ReplyService>();
             services.AddTransient<ISignRepository, UserInfoRepository>();
             services.AddTransient<ISignService, SignService>();
+            services.AddHttpContextAccessor();
+            services.AddSingleton<CookieHelper>();
+            services.AddSingleton<CryptoHelper>();
+            services.AddSingleton<AppConfig>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            //config
+            services.AddSingleton((s) =>
+            {
+                var config = configuration.GetSection("AppConfiguration").Get<AppConfig>();
+                foreach (var item in configuration.GetChildren().Where(c => CONFIG_NAMES.Contains(c.Key)).ToDictionary(x => x.Key, x => x.Value))
+                {
+                    config[item.Key] = item.Value;
+                }
+                return config;
+            });
 
             var sqlContext = new MySqlDbContext()
             {

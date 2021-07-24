@@ -1,0 +1,17 @@
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\bin\Debug\netcoreapp3.1\NLog.config
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\bin\Debug\netcoreapp3.1\CrewRepository.deps.json
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\bin\Debug\netcoreapp3.1\CrewRepository.dll
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\bin\Debug\netcoreapp3.1\CrewRepository.pdb
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\bin\Debug\netcoreapp3.1\CrewModel.dll
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\bin\Debug\netcoreapp3.1\Shared.dll
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\bin\Debug\netcoreapp3.1\CrewModel.pdb
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\bin\Debug\netcoreapp3.1\Shared.pdb
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\bin\Debug\netcoreapp3.1\NLog.xml
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\obj\Debug\netcoreapp3.1\CrewRepository.csprojAssemblyReference.cache
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\obj\Debug\netcoreapp3.1\CrewRepository.csproj.CoreCompileInputs.cache
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\obj\Debug\netcoreapp3.1\CrewRepository.AssemblyInfoInputs.cache
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\obj\Debug\netcoreapp3.1\CrewRepository.AssemblyInfo.cs
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\obj\Debug\netcoreapp3.1\CrewRepository.csproj.CopyComplete
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\obj\Debug\netcoreapp3.1\CrewRepository.dll
+C:\Users\hb\Desktop\Sources\HomepageSorce\2021-07-18\backend\ITCREW_Homepage\ITCREWS\CrewRepository\obj\Debug\netcoreapp3.1\CrewRepository.pdb

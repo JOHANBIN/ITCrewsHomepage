@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CrewCore.Helpers;
 using CrewCore.Web;
 using CrewModel;
 using CrewService.Interface;
@@ -19,7 +20,7 @@ namespace ITCREWS.Controllers.API
         private readonly PasswordHasher hash=new PasswordHasher();
         private IHttpContextAccessor _context;
 
-        public SignUpController(ISignService signService)
+        public SignUpController(IHttpContextAccessor context, CookieHelper cookie, ISignService signService) : base(context, cookie)
         {
             //_context = context;
             _signService = signService;

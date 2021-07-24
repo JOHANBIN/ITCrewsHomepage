@@ -38,7 +38,7 @@ namespace ITCREWS.Controllers.API
             response.AuthorNo = subject.UserNo;
             response.AuthorId = subject.UserId;
             response.ReplyList = await GetSortingReply(body.SubjId);
-
+            response.AuthorImg = subject.UserImage;
             return response;
         }
         private async Task<List<CrewModel.ReplyModel>> GetSortingReply(long subjectId)
@@ -59,6 +59,7 @@ namespace ITCREWS.Controllers.API
                     Desc = reply.Desc,
                     ParentId = reply.ParentId,
                     ReplyId = reply.ReplyId,
+                    AuthorImg = reply.AuthorImg,
                     SubjectId = reply.SubjectId
                 };
 

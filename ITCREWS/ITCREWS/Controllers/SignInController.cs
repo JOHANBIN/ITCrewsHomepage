@@ -17,14 +17,16 @@ namespace ITCREWS.Controllers.API
 {
     public class SignInController : BaseApiController<SignIn>
     {
-        ISignService signService;
+        ISignService _signService;
         private CookieHelper _cookie;
 
         private readonly PasswordHasher hash = new PasswordHasher();
         private IHttpContextAccessor _context;
-        public SignInController(IHttpContextAccessor context)
+        public SignInController(IHttpContextAccessor context, CookieHelper cookie, ISignService signService) :base(context, cookie)
         {
             _context = context;
+            _cookie = cookie;
+            _signService = signService;
         }
 
         public override async Task<ICommonResponse> Process(SignIn body)
@@ -40,32 +42,37 @@ namespace ITCREWS.Controllers.API
             {
                 _cookie = new CookieHelper(_context,new CryptoHelper(appCofig), appCofig);
                 //아이디 확인
-                var result = await signService.Get(body.UserId);
+                var userInfo = await _signService.Get(body.UserId);
+
+                if (userInfo == null)
+                {
+                    //아이디 없음
+                    return MakeErrorResponse(400, $"not found UserId - {body.UserId}");
+                }
 
                 //pw확인
-                var rst = hash.VerifyHashedPassword(result.Password, body.Password);
+                var rst = hash.VerifyHashedPassword(userInfo.Password, body.Password);
 
                 if (rst.Equals(Microsoft.AspNet.Identity.PasswordVerificationResult.Success))
                 {
-                    var userInfo = await signService.Get(body.UserId);
                     // 성공 시 AccessToken 발행
                     var preToken = new TokenResultModel()
                     {
-                        payload = { cn = userInfo.UserNo, id = userInfo.ToString(), exp = (int)HttpUtil.ConvertToUnixTimestamp(DateTime.UtcNow) + 1800 }
+                        payload = { cn = userInfo.UserNo, id = userInfo.UserId.ToString(), exp = (int)HttpUtil.ConvertToUnixTimestamp(DateTime.UtcNow) + 1800 }
                     };
                     var changeToken = JsonConvert.SerializeObject(preToken);
                     _cookie.Set( "AccessToken", changeToken);
-                    return new SignInResponse() { Result = "SignIn Success" };
+                    return new SignInResponse() { Result = "Y" };
                 }
                 else
                 {
-                    return new SignInResponse() { ErrorDesc = "Not Match Id OR PW" };
+                    return new SignInResponse() {Result="N" ,ErrorDesc = "Not Match Id OR PW" };
                 }
             }
             catch (Exception e)
             {
                 LogHelper.Error(e.Message);
-                return new SignInResponse() { ErrorDesc = "SignIn Faill" };
+                return MakeErrorResponse(400, $"{e.Message} - {body.UserId}");
             }
 
         }
